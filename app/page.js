@@ -24,6 +24,7 @@ export default function Home() {
     setLoading(true); // Set loading true before the request
 
     try {
+      setUploadResponse(null); // Reset the response state before the request
       const response = await axios.post(uploadUrl, params, {
         timeout: 600000, // Set timeout to 600000 milliseconds (10 minutes)
       });
