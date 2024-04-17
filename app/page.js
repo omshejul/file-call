@@ -49,6 +49,7 @@ export default function Home() {
     if (file) {
       await uploadFile(file);
     } else {
+      alert("No file selected");
       console.log("No file selected");
     }
   };
@@ -62,8 +63,8 @@ export default function Home() {
           onChange={handleFileChange}
         />
         <button
-          type="submit"
-          className="mt-4 px-4 py-2 bg-blue-500 text-white rounded"
+          type="disabled"
+          className={`mt-4 px-4 py-2 ${loading ? "bg-gray-500" : "bg-blue-500"} bg-blue-500 text-white rounded`}
           disabled={loading}
         >
           {loading ? "Uploading..." : "Upload File"}
