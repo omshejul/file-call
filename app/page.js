@@ -68,7 +68,7 @@ export default function Home() {
           className={`mt-4 px-4 py-2 ${loading ? "bg-gray-500" : "bg-blue-500"} bg-blue-500 text-white rounded`}
           disabled={loading}
         >
-          {loading ? "Uploading..." : "Upload File"}
+          {loading ? "Waiting for response..." : "Upload File"}
         </button>
       </form>
       {/* Conditionally render the response div only if there is a response */}
