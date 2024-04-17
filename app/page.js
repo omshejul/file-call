@@ -19,7 +19,7 @@ export default function Home() {
 
     const uploadUrl =
       // "http://127.0.0.1:1880/zip";
-      "https://cors-anywhere.herokuapp.com/https://dev.assisto.tech/conv_scorer/scorers";
+      "https://dev.assisto.tech/conv_scorer/scorers";
 
     setLoading(true); // Set loading true before the request
 
